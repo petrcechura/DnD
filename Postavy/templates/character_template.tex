@@ -1,0 +1,69 @@
+\documentclass[letterpaper,twocolumn,openany,nodeprecatedcode]{dndbook}
+
+% Use babel or polyglossia to automatically redefine macros for terms
+% Armor Class, Level, etc...
+% Default output is in English; captions are located in lib/dndstrings.sty.
+% If no captions exist for a language, English will be used.
+%1. To load a language with babel:
+%	\usepackage[<lang>]{babel}
+%2. To load a language with polyglossia:
+%	\usepackage{polyglossia}
+%	\setdefaultlanguage{<lang>}
+\usepackage[english]{babel}
+%\usepackage[italian]{babel}
+% For further options (multilanguage documents, hypenations, language environments...)
+% please refer to babel/polyglossia's documentation.
+
+\usepackage[utf8]{inputenc}
+\usepackage[singlelinecheck=false]{caption}
+\usepackage{lipsum}
+\usepackage{listings}
+\usepackage{shortvrb}
+\usepackage{stfloats}
+
+\captionsetup[table]{labelformat=empty,font={sf,sc,bf,},skip=0pt}
+
+\MakeShortVerb{|}
+
+\lstset{%
+  basicstyle=\ttfamily,
+  language=[LaTeX]{TeX},
+  breaklines=true,
+}
+
+\title{\textit{Postavy}}
+\author{Iči}
+\date{\textit{datum}}
+
+\begin{document}
+
+
+
+\chapter{\textit{jmeno postavy}}
+% možná include toho, co je pod tímto?
+\section{Osobnost postavy}
+\textit{Uvedení postavy pomocí přímé řeči a v nějaké typické situaci.}
+\subsection{Zázemí}
+\paragraph{Rasa:} \textit{Člověk, elf...}
+\paragraph{Příslušnost:} \textit{frakce, ke kterým se postava hlásí}
+\subsection{Povahové rysy}
+\textit{Stručný popis postavy jako takové z hlediska chování k ostatním, vlastního postoji k životu atd.}
+
+\paragraph{Klíčová slova: }  \textit{povahové rysy, přípavná jména} \\
+\paragraph{Přesvědčení: } \textit{Zmatené zlo, zákonné dobro atd.}  \\
+
+\subsubsection{Cíl postavy}
+Čeho chce postava v příběhu dosáhnout? Přežít? Zlákat co nejvíce lidí? Zabíjet? Zachraňovat? Sloužit někomu?
+
+
+\section{Schopnosti postavy}
+možná nějaký úvod?
+\subsection{Zdroje a hranice (sudba?)}
+Tabulka zdrojů a hranic.
+\subsection{Dovednosti}
+Uvedeny různé dovednosti, kterými postava (podle pravidel i mimo) oplývá (magie, mistrovství...)
+
+\section{Historie}
+Stručná historie postavy, která osvětlí některé její další motivy.
+
+\end{document}
