@@ -10,7 +10,7 @@ SSS=~/texmaker-packages//:
 DIRS:=$(filter-out templates/,$(wildcard */))
 
 CHARACTER_PDF="postavy.pdf"
-PDF_FILES=$(filter-out templates/*, (wildcard %/build/%.pdf))
+PDF_FILES=$(filter-out templates/*, $(wildcard */build/*.pdf))
 
 # templates to pass via -create command
 TEMPLATE_DIR="templates"
