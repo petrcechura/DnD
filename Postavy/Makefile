@@ -3,7 +3,7 @@
 
 # a location where the texmaker packages to be included are located
 # (TEXINPUTS is pdflatex's env variable)
-TEXINPUTS=$(dir $(abspath $(MAKEFILE_LIST)))../references//:
+TEXINPUTS=$(dir $(abspath $(MAKEFILE_LIST)))../references/DND-5e-LaTeX-Template//:
 SSS=~/texmaker-packages//:
 
 # Makefiles that are used to generate separate pdfs for each character
@@ -25,6 +25,7 @@ help:
 	@echo 'characters'	        -- creates just separate character pdfs in their dirs
 	@echo 'create NAME=<name>'   -- create a new character folder and template
 	@echo Directories to be processed: $(DIRS)
+	@echo $(TEXINPUTS)
 
 
 .PHONY compile:
